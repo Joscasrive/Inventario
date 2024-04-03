@@ -4,7 +4,7 @@ $user_id_del=limpiar_cadena($_GET['user_id_del']);
 $check_usuario=conexion();
 $check_usuario=$check_usuario->query("SELECT usuario_id FROM usuario WHERE usuario_id ='$user_id_del' ");
 if ($check_usuario->rowCount()==1) {
-    //verificar si existe productos
+    //verificar si existe productos#
     $check_producto=conexion();
     $check_producto=$check_producto->query("SELECT usuario_id FROM producto WHERE usuario_id ='$user_id_del' LIMIT 1");
     if ($check_producto->rowCount()<=0) {

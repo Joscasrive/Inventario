@@ -6,11 +6,12 @@ if (in_array($modulo_buscador, $modulos)) {
     
 	$modulos_url=[
         "usuario"=>"user_search",
-        "categorias"=>"category_search",
-        "producto"=>"producto_search"
+        "categoria"=>"category_search",
+        "producto"=>"product_search"
     ];
     
 	$modulos_url=$modulos_url[$modulo_buscador];
+   
     
 	$modulo_buscador="busqueda_".$modulo_buscador;
     

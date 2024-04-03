@@ -38,7 +38,7 @@
             <form class="has-text-centered mt-6 mb-6" action="" method="POST" autocomplete="off" >
                 <input type="hidden" name="modulo_buscador" value="usuario"> 
                 <input type="hidden" name="eliminar_buscador" value="usuario">
-                <p>Estas buscando <strong>“Busqueda usuario”</strong></p>
+                <p>Estas buscando <strong><?php echo $_SESSION['busqueda_usuario']?></strong></p>
                 <br>
                 <button type="submit" class="button is-danger is-rounded">Eliminar busqueda</button>
             </form>

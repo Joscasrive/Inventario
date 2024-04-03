@@ -17,7 +17,7 @@
             include ("./vistas/logout.php");
             exit();
             }
-        
+      
         
         include ("./inc/navbar.php") ;
         include ("./vistas/".$_GET['vista'].".php") ; 
